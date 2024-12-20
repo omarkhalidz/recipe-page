@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Young Serif", serif;
+}
+
+.container {
+  max-width: 1100px;
+  background-color: white;
+  margin: 150px auto;
+  border-radius: 35px;
+  padding: 45px;
+}
+.img {
+  overflow: hidden;
+}
+.img img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.title h1 {
+  margin: 35px 0;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.title p {
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Outfit";
+  margin-bottom: 0;
+}
+
+.prep {
+  margin: 35px 0;
+  border-radius: 20px;
+  padding: 35px;
+  background-color: hsl(332, 51%, 97%);
+  font-family: "Outfit";
+}
+.prep ul {
+  list-style: none;
+}
+.prep h3 {
+  color: hsl(332, 51%, 32%);
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.prep ul li span {
+  color: hsl(24, 5%, 18%);
+  margin-right: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+.prep ul li {
+  color: hsl(30, 10%, 34%);
+  padding: 10px 0;
+  position: relative;
+}
+.prep ul li:last-child {
+  padding-bottom: 0;
+}
+.prep ul li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: hsl(332, 51%, 32%);
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ingred {
+  border-bottom: 1px solid hsl(30, 10%, 90%);
+  padding-bottom: 10px;
+}
+.ingred ul {
+  /* list-style: none; */
+  font-family: "Outfit";
+}
+.ingred h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.ingred li {
+  color: hsl(30, 10%, 34%);
+  padding: 7.5px 0 0 15px;
+  margin: 10px 0 10px -12px;
+}
+.ingred li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 18px;
+}
+.instruc {
+  padding: 35px 0 16px;
+  border-bottom: 1px solid hsl(30, 10%, 90%);
+}
+.instruc h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.instruc ul {
+  font-family: "Outfit";
+  list-style: decimal;
+}
+.instruc ul li {
+  padding: 0 0 0 15px;
+  margin: 10px 0 10px -12px;
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+}
+
+.instruc ul li span {
+  color: hsl(24, 5%, 18%);
+  margin-right: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.instruc ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nutration {
+  padding: 35px 0 0;
+  font-family: "Outfit";
+}
+.nutration h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  margin: -10px 0 0 0;
+  letter-spacing: 1px;
+  font-family: "Young serif";
+}
+.nutration p {
+  color: hsl(30, 10%, 34%);
+  font-weight: 500;
+  font-size: 17px;
+}
+.nutration ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+.nutration ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 45px;
+  border-bottom: 1px solid hsl(30, 10%, 90%);
+}
+.nutration ul li:last-of-type {
+  border-bottom: none;
+  padding: 15px 45px 0;
+}
+.nutration ul li span {
+  width: 50%;
+}
+.nutration ul li span:first-of-type {
+  color: hsl(30, 10%, 34%);
+  font-weight: 600;
+}
+.nutration ul li span:last-of-type {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 35px;
+  }
+  .img {
+    overflow: hidden;
+    width: calc(100% + 70px);
+    margin-left: -35px;
+    margin-top: -35px;
+  }
+  .img img {
+    border-radius: 0;
+  }
+  .title h1 {
+    margin: 17px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .title p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .prep {
+    margin: 35px 0;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: hsl(332, 51%, 97%);
+    font-family: "Outfit";
+  }
+  .prep h3 {
+    font-size: 25px;
+  }
+  .prep ul li span {
+    margin-right: 3px;
+  }
+  .prep ul li {
+    padding: 5px 0;
+  }
+
+  .ingred h3 {
+    font-size: 25px;
+  }
+  .ingred li {
+    padding: 4.5px 0;
+  }
+  .instruc h3 {
+    font-size: 25px;
+  }
+
+  .instruc ul li {
+    line-height: 1.2;
+  }
+
+  .instruc ul li::marker {
+    font-size: 16px;
+  }
+  .nutration {
+    padding: 35px 0 0;
+    font-family: "Outfit";
+  }
+  .nutration h3 {
+    color: hsl(14, 45%, 36%);
+    font-size: 25px;
+    margin: -10px 0 0 0;
+    letter-spacing: 1px;
+    font-family: "Young serif";
+  }
+  .nutration p {
+    color: hsl(30, 10%, 34%);
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .nutration ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .nutration ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 25px;
+    border-bottom: 1px solid hsl(30, 10%, 90%);
+  }
+  .nutration ul li:last-of-type {
+    border-bottom: none;
+    padding: 10px 25px 0;
+  }
+}
